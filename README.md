@@ -5,7 +5,8 @@
 ```
 cnpm install
 全局安装nodemon(用于开发，热更新),pm2(用于部署)
-cnpm install nodemon,pm2 -g
+cnpm install nodemon -g
+cnpm install pm2 -g
 ```
 
 ### 创建数据库和管理员账号
