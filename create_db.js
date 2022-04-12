@@ -13,7 +13,7 @@ const CreateAdmin = async () => {
 	  password:     encrypt("123456"), 
 	  is_superuser: true,
 	  username:     "admin",
-	  email:        "81037981@qq.com",
+	  email:        "xxxxxxxxx@qq.com",
 	  is_active:    true,  
 	  creator:      0, 
 	  modifier:     0, 
