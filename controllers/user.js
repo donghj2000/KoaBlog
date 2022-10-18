@@ -101,7 +101,7 @@ var ListUsers = async (ctx, next) => {
                     email:      user.email,
                     avatar:     user.avatar,
                     nickname:   user.nickname,
-                    is_active:  user.is_activate,
+                    is_active:  user.is_active,
                     is_superuser: user.is_superuser,
                     created_at: user.created_at }
             });
@@ -228,6 +228,9 @@ var UpdateUser = async (ctx, next) => {
     }
     if (ctx.request.body.avatar != undefined && ctx.request.body.avatar != "") {
         user.avatar = ctx.request.body.avatar;
+    }
+    if (ctx.request.body.is_active != undefined) {
+        user.is_active  = ctx.request.body.is_active;
     }
 
     user.modifier = ctx.params.id;
