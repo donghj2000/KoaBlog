@@ -27,7 +27,7 @@ const custom_match = (ctx) => {
         return true;
     }   
     console.log('jwt auth');
-    return true;
+    return false;
 }
 
 let transporter = nodemailer.createTransport({
