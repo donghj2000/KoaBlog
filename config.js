@@ -1,6 +1,3 @@
-
-console.log('__dirname=', __dirname);
-
 module.exports = { 
   BASE_DIR: __dirname,
   UPLOAD_URL: "upload",
