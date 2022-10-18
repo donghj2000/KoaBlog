@@ -104,7 +104,7 @@ Comment.belongsTo(Comment, {
 });
 Comment.belongsTo(User,{
   onDelete: "CASCADE",
-  foreignKey: {name: "user_id",allowNull: true}
+  foreignKey: {name: "user_id",allowNull: false}
 });
 Article.hasMany(Comment, {
   onDelete: "NO ACTION",
